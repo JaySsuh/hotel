@@ -42,7 +42,6 @@ Room Room::rooms[max]; //initializes static array
 
 void manageRooms() {
     int opt, rno, i, flag = 0; //option, room #, flag for t/f
-    char ch;
     do {
         std::cout << "\n### Manage Rooms ###";
         std::cout << "\n1. Add Room";
@@ -164,7 +163,6 @@ void Room::displayRoom(const Room &tempRoom) { //displays room details using tem
 
 class HotelMgnt : protected Room { //hm class inheriting from room
 private:
-    int found;
 
 public: //public void functions for management system
     void checkIn();
